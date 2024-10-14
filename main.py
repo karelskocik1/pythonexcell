@@ -30,7 +30,7 @@ bunky = df.isin([hledany_obsah])
 # Získání indexů řádků a sloupců, kde se obsah nachází
 pozice = list(zip(*np.where(bunky)))
 
-# Výpis pozic
+# Výpis pozic na obrazovku
 for radek_idx, sloupec_idx in pozice:
     radek = radek_idx + 1  # Přidání 1, protože indexy jsou od 0
     sloupec = get_column_letter(sloupec_idx)
